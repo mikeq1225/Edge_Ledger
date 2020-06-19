@@ -22,22 +22,127 @@
 	opacity: 0.9;
 }
 
-.btnPrimary {
+.btnPrimary,
+.bgPrimary {
 	background: #28a745;
 	color: #fff;
 }
 
-.btnSecondary {
+.btnSecondary,
+.bgSecondary {
 	background: #0284d0;
 	color: #fff;
 }
 
-.btnDark {
+.btnDark,
+.bgDark {
 	background: #333;
 	color: #fff;
 }
 
-.btnLight {
+.btnLight,
+.bgLight {
 	background: #f4f4f4;
 	color: #333;
+}
+
+.btnOutline {
+	background: transparent;
+	border: 1px solid #fff;
+}
+
+/* Flex Items */
+.flexItems {
+	display: flex;
+	text-align: center;
+	justify-content: center;
+	text-align: center;
+	height: 100%;
+}
+
+.flexItems > div {
+	padding: 20px;
+}
+
+/* Flex Columns */
+.flexColumns .flexReverse {
+	flex-direction: row-reverse;
+}
+
+.flexColumns .row {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	width: 100%;
+}
+
+.flexColumns .column {
+	display: flex;
+	flex-direction: column;
+	flex-basis: 100%;
+	flex: 1;
+}
+
+.flexColumns .column .column1,
+.flexColumns .column .column2 {
+	height: 100%;
+}
+
+.flexColumns img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.flexColumns .column2 {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: center;
+	padding: 2rem;
+}
+
+.flexColumns h2 {
+	font-size: 2.2rem;
+	font-weight: 100;
+}
+
+.flexColumns h4 {
+	margin: 0px 0px 10px 0px;
+}
+
+.flexColumns p {
+	margin: 20px 0px;
+}
+
+/* Section Header */
+.sectionHeader {
+	padding: 2rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+}
+
+.sectionHeader h2 {
+	font-size: 2.5rem;
+	margin: 20px 0px;
+}
+
+.sectionPadding {
+	padding: 20px 20px 40px 20px;
+}
+
+/* FLex Grid */
+.flexGrid .row {
+	display: flex;
+	flex-wrap: wrap;
+	padding: 0px 40px;
+}
+
+.flexGrid .column {
+	flex: 25%;
+	max-width: 25%;
+	padding: 0px 4px;
 }
